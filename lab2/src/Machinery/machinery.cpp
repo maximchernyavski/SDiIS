@@ -7,11 +7,11 @@ Machinery::Machinery(std::string name, std::string type) {
     this->status = "Newly added";
 }
 
-const int Machinery::getId() {
+int Machinery::getId() const{
     return this->id;
 }
 
-const std::string Machinery::getName() {
+std::string Machinery::getName() const{
     return this->name;
 }
 
@@ -19,7 +19,7 @@ void Machinery::setName(std::string name){
     this->name = name;
 }
 
-const std::string Machinery::getType() {
+std::string Machinery::getType() const{
     return this->type;
 }
 
@@ -27,7 +27,7 @@ void Machinery::setType(std::string type){
     this->type = type;
 }
 
-const std::string Machinery::getStatus() {
+std::string Machinery::getStatus() const{
     return this->status;
 }
 
@@ -35,7 +35,7 @@ void Machinery::setStatus(std::string status){
     this->status = status;
 }
 
-const Project* Machinery::getAssignedProject() {
+Project* Machinery::getAssignedProject() const{
     return this->assignedProject;
 }
 
@@ -43,7 +43,7 @@ void Machinery::setProject(Project* newProject) {
     assignedProject = newProject;
 }
 
-const void Machinery::showData(){
+void Machinery::showData() const{
     std::cout << "Machinery id: " << id << "\n"
               << "Machinery name: " << name << "\n"
               << "Machinery type: " << type << "\n"

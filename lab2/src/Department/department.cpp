@@ -7,11 +7,11 @@ Department::Department(std::string name, int authority) {
     this->authority = authority;
 }
 
-const int Department::getId() {
+int Department::getId()  const{
     return this->id;
 }
 
-const std::string Department::getName() {
+std::string Department::getName()  const{
     return this->name;
 }
 
@@ -19,7 +19,7 @@ void Department::setName(std::string name){
     this->name = name;
 }
 
-const std::vector<Employee*> Department::getWorkers() {
+std::vector<Employee*> Department::getWorkers()  const{
     return this->workers;
 }
 
@@ -46,7 +46,7 @@ void Department::clearWorkerList() {
     this->workers.clear();
 }
 
-const void Department::showData(){
+void Department::showData() const{
     std::cout << "Department id: " << id << "\n"
               << "Department name: " << name << "\n"
               << "Department type: " << authority << "\n";

@@ -8,11 +8,11 @@ Order::Order(std::string name, std::string description) {
     this->status = "Newly added";
 }
 
-const int Order::getId() {
+int Order::getId() const{
     return this->id;
 }
 
-const std::string Order::getName() {
+std::string Order::getName() const{
     return this->name;
 }
 
@@ -20,7 +20,7 @@ void Order::setName(std::string name){
     this->name = name;
 }
 
-const std::string Order::getDescription() {
+std::string Order::getDescription() const{
     return this->description;
 }
 
@@ -28,7 +28,7 @@ void Order::setDescription(std::string description){
     this->description = description;
 }
 
-const std::string Order::getStatus() {
+std::string Order::getStatus() const{
     return this->status;
 }
 
@@ -36,7 +36,7 @@ void Order::setStatus(std::string status){
     this->status = status;
 }
 
-const void Order::showData(){
+void Order::showData() const{
     std::cout << "Order id: " << id << "\n"
               << "Order name: " << name << "\n"
               << "Order description: " << description << "\n";

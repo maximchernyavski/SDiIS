@@ -17,10 +17,10 @@ class Affilates {
     Affilates(std::string);
 
     int getId();
-    const std::string getAddress();
-    const std::vector<Employee*> getEmployes();
-    const Employee* getOfficeDirector();
-    const std::vector<Project*> getProjects();
+    std::string getAddress() const;
+    std::vector<Employee*> getEmployes() const;
+    Employee* getOfficeDirector() const;
+    std::vector<Project*> getProjects() const;
 
     void setAddress(std::string);
     void addNewEmployes(std::vector<Employee*>);
@@ -31,5 +31,5 @@ class Affilates {
     void removeProject(Project*);
     void clearProjectList();
 
-    const void showData();
+    void showData() const;
 };

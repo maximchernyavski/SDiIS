@@ -7,11 +7,11 @@ Material::Material(std::string name, std::string description) {
     this->description = description;
 }
 
-const int Material::getId() {
+int Material::getId() const{
     return this->id;
 }
 
-const std::string Material::getName() {
+std::string Material::getName() const{
     return this->name;
 }
 
@@ -19,7 +19,7 @@ void Material::setName(std::string name){
     this->name = name;
 }
 
-const std::string Material::getDescription() {
+std::string Material::getDescription() const{
     return this->description;
 }
 
@@ -28,7 +28,7 @@ void Material::setDescription(std::string description){
 }
 
 
-const void Material::showData(){
+void Material::showData() const{
     std::cout << "Material id: " << id << "\n"
               << "Material name: " << name << "\n"
               << "Material description: " << description << "\n";

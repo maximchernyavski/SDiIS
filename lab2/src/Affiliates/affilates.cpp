@@ -10,7 +10,7 @@ int Affilates::getId() {
     return this->id;
 }
 
-const std::string Affilates::getAddress() {
+std::string Affilates::getAddress() const{
     return this->address;
 }
 
@@ -18,7 +18,7 @@ void Affilates::setAddress(std::string address){
     this->address;
 }
 
-const Employee* Affilates::getOfficeDirector() {
+Employee* Affilates::getOfficeDirector() const{
     return this->officeDirector;
 }
 
@@ -26,7 +26,7 @@ void Affilates::setOfficeDirector(Employee* newDirector) {
     this->officeDirector = newDirector;
 }
 
-const std::vector<Employee*> Affilates::getEmployes() {
+std::vector<Employee*> Affilates::getEmployes() const{
     return this->employes;
 }
 
@@ -53,7 +53,7 @@ void Affilates::clearEmployesList() {
     this->employes.clear();
 }
 
-const std::vector<Project*> Affilates::getProjects() {
+std::vector<Project*> Affilates::getProjects() const{
     return this->projects;
 }
 
@@ -80,7 +80,7 @@ void Affilates::clearProjectList() {
     this->projects.clear();
 }
 
-const void Affilates::showData(){
+void Affilates::showData() const{
     std::cout << "Affilates id: " << id << "\n"
               << "Affilates name: " << address << "\n"
               << "Affilates type: " << officeDirector->getName() << "\n";

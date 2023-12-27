@@ -9,11 +9,11 @@ Employee::Employee(std::string name, std::string surname, Position* position, De
     this->status = "Newly added";
 }
 
-const int Employee::getId() {
+int Employee::getId() const{
     return this->id;
 }
 
-const std::string Employee::getName() {
+std::string Employee::getName() const{
     return this->name;
 }
 
@@ -21,7 +21,7 @@ void Employee::setName(std::string name){
     this->name = name;
 }
 
-const std::string Employee::getSurname() {
+std::string Employee::getSurname() const{
     return this->surname;
 }
 
@@ -29,7 +29,7 @@ void Employee::setSurname(std::string surname){
     this->surname = surname;
 }
 
-const Position* Employee::getPosition() {
+Position* Employee::getPosition() const{
     return position;
 }
 
@@ -37,7 +37,7 @@ void Employee::setPosition(Position* newPosition) {
     position = newPosition;
 }
 
-const Department* Employee::getDepartment() {
+Department* Employee::getDepartment() const{
     return department;
 }
 
@@ -45,7 +45,7 @@ void Employee::setDepartment(Department* newDepartment) {
     department = newDepartment;
 }
 
-const std::string Employee::getStatus() {
+std::string Employee::getStatus() const{
     return this->status;
 }
 
@@ -53,7 +53,7 @@ void Employee::setStatus(std::string newStatus) {
     this->status = newStatus;
 }
 
-const void Employee::showData(){
+void Employee::showData() const{
     std::cout << "Employee id: " << id << "\n"
               << "Employee name: " << name << "\n"
               << "Employee surname: " << surname << "\n"

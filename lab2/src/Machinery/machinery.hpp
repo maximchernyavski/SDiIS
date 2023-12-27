@@ -17,12 +17,12 @@ class Machinery{
     void setStatus(std::string);
     void setProject(Project*);
 
-    const int getId();
-    const std::string getName();
-    const std::string getType();
-    const std::string getStatus();
-    const Project* getAssignedProject();
+    int getId() const;
+    std::string getName() const;
+    std::string getType() const;
+    std::string getStatus() const;
+    Project* getAssignedProject() const;
 
-    const void showData();
+    void showData() const;
 };
 

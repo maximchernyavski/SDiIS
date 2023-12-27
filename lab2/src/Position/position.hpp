@@ -16,11 +16,11 @@ class Position{
     void changePositionAuthority(int);
     void changePositionId(int);
 
-    const int getId();
-    const int getAuthority();
-    const std::string getName();
-    const std::string getDescription();
-    const void showData();
+    int getId() const;
+    int getAuthority() const;
+    std::string getName() const;
+    std::string getDescription() const;
+    void showData() const;
 
     virtual void work() = 0;
 };

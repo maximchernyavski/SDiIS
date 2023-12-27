@@ -8,11 +8,11 @@ Project::Project(std::string name, std::string description) {
     this->status = "Newly added";
 }
 
-const int Project::getId() {
+int Project::getId() const{
     return this->id;
 }
 
-const std::string Project::getName() {
+std::string Project::getName() const{
     return this->name;
 }
 
@@ -20,7 +20,7 @@ void Project::setName(std::string name){
     this->name = name;
 }
 
-const std::string Project::getDescription() {
+std::string Project::getDescription() const{
     return this->description;
 }
 
@@ -28,7 +28,7 @@ void Project::setDescription(std::string newDescription){
     this->description = newDescription;
 }
 
-const std::string Project::getStatus() {
+std::string Project::getStatus() const{
     return this->status;
 }
 
@@ -36,7 +36,7 @@ void Project::setStatus(std::string status){
     this->status = status;
 }
 
-const Employee* Project::getProjectOfficer() {
+Employee* Project::getProjectOfficer() const{
     return this->projectOfficer;
 }
 
@@ -44,11 +44,11 @@ void Project::setProjectOfficer(Employee* newOfficer) {
     this->projectOfficer = newOfficer;
 }
 
-const std::vector<Employee*> Project::getEmployes() {
+std::vector<Employee*> Project::getEmployes() const{
     return this->employes;
 }
 
-const std::vector<Employee*> Project::getEmployes() {
+std::vector<Employee*> Project::getEmployes() const{
     return this->employes;
 }
 
@@ -75,7 +75,7 @@ void Project::clearEmployesList() {
     this->employes.clear();
 }
 
-const std::vector<Machinery*> Project::getEquipement() {
+std::vector<Machinery*> Project::getEquipement() const{
     return this->equipment;
 }
 
@@ -102,7 +102,7 @@ void Project::clearEquipementList() {
     this->equipment.clear();
 }
 
-const std::vector<Order*> Project::getOrders() {
+std::vector<Order*> Project::getOrders() const{
     return this->orders;
 }
 
@@ -129,7 +129,7 @@ void Project::clearOrderList() {
     this->orders.clear();
 }
 
-const void Project::showData(){
+void Project::showData() const{
     std::cout << "Project id: " << id << "\n"
               << "Project name: " << name << "\n"
               << "Project type: " << description << "\n"

@@ -25,23 +25,23 @@ void Position::changePositionAuthority(int newAuthority){
 }
 
 
-const int Position::getId(){
+int Position::getId() const{
     return this->id;
 }
 
-const int Position::getAuthority(){
+int Position::getAuthority() const{
     return this->authority;
 }
 
-const std::string Position::getName(){
+std::string Position::getName() const{
     return this->name;
 }
 
-const std::string Position::getDescription(){
+std::string Position::getDescription() const{
     return this->description;
 }
 
-const void Position::showData(){
+void Position::showData() const{
         std::cout << "------------Position id: " << id << "\n";
         std::cout << "----------Position name: " << name << "\n";
         std::cout << "-----Position authority: " << authority << "\n";

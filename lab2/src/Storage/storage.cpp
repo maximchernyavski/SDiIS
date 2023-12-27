@@ -6,11 +6,11 @@ Storage::Storage() {
     // this->id = generateNewId();
 }
 
-const int Storage::getId() {
+int Storage::getId() const{
     return this->id;
 }
 
-const std::string Storage::getStatus() {
+std::string Storage::getStatus() const{
     return this->status;
 }
 
@@ -18,7 +18,7 @@ void Storage::setStatus(std::string status){
     this->status;
 }
 
-const std::vector<Material*> Storage::getMaterials() {
+std::vector<Material*> Storage::getMaterials() const{
     return this->materials;
 }
 
@@ -45,7 +45,7 @@ void Storage::clearMaterialList() {
     this->materials.clear();
 }
 
-const void Storage::showData(){
+void Storage::showData() const{
     std::cout << "Storage id: " << id << "\n"
               << "Storage status: " << status << "\n";
 }

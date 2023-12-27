@@ -17,14 +17,14 @@ class Project{
     public:
     Project(std::string, std::string);
 
-    const int getId();
-    const std::string getName();
-    const std::string getDescription();
-    const std::string getStatus();
-    const Employee* getProjectOfficer();
-    const std::vector<Employee*> getEmployes();
-    const std::vector<Machinery*> getEquipement();
-    const std::vector<Order*> getOrders();
+    int getId() const;
+    std::string getName() const;
+    std::string getDescription() const;
+    std::string getStatus() const;
+    Employee* getProjectOfficer() const;
+    std::vector<Employee*> getEmployes() const;
+    std::vector<Machinery*> getEquipement() const;
+    std::vector<Order*> getOrders() const;
 
     void setName(std::string);
     void setDescription(std::string);
@@ -40,5 +40,5 @@ class Project{
     void removeOrder(Order*);
     void clearOrderList();
 
-    const void showData();
+    void showData() const;
 };

@@ -8,14 +8,14 @@ class Order{
     public:
     Order(std::string, std::string);
 
-    const int getId();
-    const std::string getName();
-    const std::string getDescription();
-    const std::string getStatus();
+    int getId() const;
+    std::string getName() const;
+    std::string getDescription() const;
+    std::string getStatus() const;
 
     void setName(std::string);
     void setDescription(std::string);
     void setStatus(std::string);
 
-    const void showData();
+    void showData() const;
 };

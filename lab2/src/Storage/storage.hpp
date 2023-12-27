@@ -11,14 +11,14 @@ class Storage{
 
     public:
     Storage();
-    const int getId();
-    const std::string getStatus();
-    const std::vector<Material*> getMaterials();
+    int getId() const;
+    std::string getStatus() const;
+    std::vector<Material*> getMaterials() const;
 
     void setStatus(std::string);
     void addNewMaterials(std::vector<Material*>);
     void removeMaterial(Material*);
     void clearMaterialList();
 
-    const void showData();
+    void showData() const;
 };

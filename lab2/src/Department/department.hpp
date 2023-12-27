@@ -11,10 +11,10 @@ class Department{
     public:
     Department(std::string, int);
 
-    const int getId();
-    const int getAuthority();
-    const std::string getName();
-    const std::vector<Employee*> getWorkers();
+    int getId() const;
+    int getAuthority() const;
+    std::string getName() const;
+    std::vector<Employee*> getWorkers() const;
 
     void setName(std::string);
     void setAuthority(int);
@@ -22,5 +22,5 @@ class Department{
     void removeWorker(Employee*);
     void clearWorkerList();
 
-    const void showData();
+    void showData() const;
 };

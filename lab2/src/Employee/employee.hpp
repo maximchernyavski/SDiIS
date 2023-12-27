@@ -15,12 +15,12 @@ class Employee{
     public:
     Employee(std::string, std::string, Position*, Department*);
 
-    const int getId();
-    const std::string getName();
-    const std::string getSurname();
-    const Department* getDepartment();
-    const Position* getPosition();
-    const std::string getStatus();
+    int getId() const;
+    std::string getName() const;
+    std::string getSurname() const;
+    Department* getDepartment() const;
+    Position* getPosition() const;
+    std::string getStatus() const;
 
     void setName(std::string);
     void setSurname(std::string);
@@ -28,5 +28,5 @@ class Employee{
     void setPosition(Position*);
     void setStatus(std::string);
 
-    const void showData();
+    void showData() const;
 };

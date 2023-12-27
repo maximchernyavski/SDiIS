@@ -9,14 +9,14 @@ class Material{
     public:
     Material(std::string, std::string);
     
-    const int getId();
-    const int getCount();
-    const std::string getName();
-    const std::string getDescription();
+    int getId() const;
+    int getCount() const;
+    std::string getName() const;
+    std::string getDescription() const;
 
     void setCount(int);
     void setName(std::string);
     void setDescription(std::string);
 
-    const void showData();
+    void showData() const;
 };
